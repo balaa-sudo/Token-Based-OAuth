@@ -11,7 +11,7 @@ function App() {
   return (
     <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
       <AuthProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/Token-Based-OAuth">
           <Routes>
             <Route path="/" element={<LoginPage />} />
             <Route path="/dashboard" element={<Dashboard />} />
